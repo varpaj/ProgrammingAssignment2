@@ -31,6 +31,10 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
+# This function will first check if inverse is already available, if so it will return the
+# inverse. If currently inverse has not been calculated, i.e. if the default value is null, it will then calculate
+# the inverse and return the result. It will also set the value of inverse as well so that next time
+# inverse will not need to be calculated. 
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
